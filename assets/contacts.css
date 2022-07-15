@@ -1,0 +1,62 @@
+
+.contacts-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+    background: rgb(121,119,120);
+    background: linear-gradient(0deg, rgba(121,119,120,1) 0%, rgba(107,32,37,1) 70%);
+}
+
+.contacts-section  a {
+    color: var(--white);
+}
+
+.contacts {
+    width: 20em;
+    padding: 10px  1.5rem;
+}
+
+.info {
+    margin: 10px 5px;
+}
+
+.info > h4 {
+    margin-top: 20px;
+}
+
+.info > p {
+    margin: 10px 0;
+}
+
+.info > a:hover, .map a:hover  {
+    color: rgb(204, 204, 204);
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    padding: 10px;
+    color: rgb(235, 235, 235);
+}
+
+.summary p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    padding: 10px;
+}
+
+.map a {
+    margin-top: 15px;
+    text-decoration: none;
+    transition: 500ms color;
+    font-size: 1.1rem;
+}

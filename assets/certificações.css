@@ -1,0 +1,42 @@
+:root {
+    --red: #e40613;
+    --gray: #797778;
+    --darker-gray: rgb(27, 27, 27);
+    --white: rgb(236, 236, 236);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(316deg, rgba(134,22,29,1) 0%, rgba(121,119,120,1) 90%);
+}
+
+.certificates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.certificates .certificate {
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+}
+
+.certificates .certificate img {
+    width: 550px;
+    height: 550px;
+    border: 4px solid rgb(48, 44, 44);
+}
+
+.certificates .certificate h3 {
+    margin-top: 30px;
+    font-size: 2em;
+    color: var(--darker-gray);
+}

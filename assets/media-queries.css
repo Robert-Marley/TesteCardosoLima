@@ -1,0 +1,554 @@
+/*******
+  HOME
+********/
+
+@media (max-width: 350px) {
+    .quem_somos {
+        margin: 40px 0 0 0;
+    }
+    
+    .quem_somos .text {
+        font-size: 0.9rem;
+    }
+    
+    .navbar .navbar-links, .institutional{
+        font-size: 1rem;
+    }
+    
+    .institutional > div {
+        width: 18rem;
+    }
+}
+
+@media (min-width: 351px) and (max-width: 400px) {
+    .quem_somos {
+        margin: 40px 0 0 0;
+    }
+    
+    .navbar .navbar-links, .quem_somos .text, .institutional{
+        font-size: 1rem;
+    }
+} 
+
+
+
+@media (min-width: 401px) and (max-width: 750px) {
+    .navbar .navbar-links, .quem_somos .text, .institutional{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .home {
+        background: linear-gradient(316deg, rgba(134,22,29,1) 0%, rgba(121,119,120,1) 90%);
+        height: fit-content;
+    }   
+
+    .institutional {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 4rem;
+        padding: 0 0 30px 0;
+    }
+
+    .institutional > div {
+        text-align: center;
+    }
+
+    .quem_somos .text {
+        width: 90%;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1099px) {
+    .institutional > div {
+        width: 14rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .body.active {
+        overflow-y: hidden;
+    }
+    
+    .btn-mobile {
+        display: flex;
+        margin-right: 3em;
+        padding: 0.5rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #hamburguer {
+        display: block;
+        width: 25px;
+        border-top: 3px solid;
+        transition: 400ms;
+        
+    }
+
+    #hamburguer::after{
+        content: '';
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: currentColor;
+        margin-top: 5px;
+        position: relative;
+    }
+
+    .navbar.active #hamburguer {
+        transform: rotate(135deg);
+    }
+
+    .navbar.active #hamburguer::after{
+        top: -8px;
+        transform: rotate(-270deg)
+    }
+    
+    .navbar .navbar-links {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        top: 88px;
+        right: 0;
+        margin: 0;
+        background-color: rgb(219, 219, 219);
+        transition: 400ms all;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .navbar.active .navbar-links {
+        height: 100vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .navbar .navbar-links li {
+        padding: 1.5rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        color: rgb(29, 29, 29);
+    }
+}
+
+@media (min-width: 1101px) and (max-width: 1300px) {
+    .institutional > div {
+        width: 18rem;
+    }
+}
+
+@media (min-width: 2000px) and (max-width: 2200px){
+    .navbar .navbar-links {
+        font-size: 1.2rem;
+    }
+    
+    .quem_somos h1 {
+        font-size: 3em;
+    }
+
+    .quem_somos .text{
+        font-size: 1.2rem;
+    }
+    
+    .institutional {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (min-width: 2201px) and (max-width: 2400px){
+    .navbar .navbar-links {
+        font-size: 1.3rem;
+    }
+    
+    .quem_somos h1 {
+        font-size: 3em;
+    }
+
+    .quem_somos .text{
+        font-size: 1.3rem;
+    }
+
+    .institutional {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 2401px) {
+    .navbar .navbar-links {
+        font-size: 1.4rem;
+    }
+    
+    .quem_somos h1 {
+        font-size: 3.5em;
+    }
+
+    .quem_somos .text{
+        font-size: 1.4rem;
+        width: 800px;
+    }
+
+    .institutional {
+        font-size: 1.4rem;
+        gap: 1rem;
+    }
+}
+
+/*******
+CLIENTES
+********/
+
+@media (min-width: 320px) and (max-width: 350px) {
+    .partners-section {
+        height: fit-content;
+    }
+    
+    .partners-section h1 {
+        font-size: 1.45em;
+    }
+
+    .carousel, .carousel .carousel-item img, .carousel .carousel-item{
+        width: 300px;
+        height: 300px;
+    }
+
+    .marketInfo {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 30px 0;
+    }
+}
+
+@media (min-width: 351px) and (max-width: 400px) {
+    .partners-section {
+        height: fit-content;
+    }
+    
+    .partners-section h1 {
+        font-size: 1.6em;
+    }
+
+    .carousel, .carousel .carousel-item img, .carousel .carousel-item{
+        width: 340px;
+        height: 300px;
+    }
+
+    .marketInfo {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 30px 0;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+    .partners-section {
+        height: fit-content;
+    }
+    
+    .partners-section h1 {
+        font-size: 1.5em;
+    }
+
+    .carousel, .carousel .carousel-item img, .carousel .carousel-item{
+        width: 360px;
+        height: 250px;
+    }
+
+    .marketInfo {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 30px 0;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+    .partners-section {
+        height: fit-content;
+    }
+    
+    .partners-section h1 {
+        font-size: 1.7em;
+    }
+
+    .carousel, .carousel .carousel-item img, .carousel .carousel-item{
+        width: 400px;
+        height: 250px;
+    }
+
+    .marketInfo {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 30px 0;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width:800px){
+    .partners-section {
+        height: fit-content;
+    }
+    
+    .marketInfo {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    .carousel, .carousel .carousel-item img, .carousel .carousel-item{
+        width: 450px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 1099px) {
+    .carousel.active, .carousel-actions.active {
+        visibility: hidden;
+      }
+
+    .marketInfo {
+        gap: 5rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 1100px) and (max-width: 1300px) {
+    .marketInfo{
+        gap: 10rem;
+    }
+   
+}
+
+@media (min-width: 2000px) and (max-width: 2200px){
+    .marketInfo {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 2201px) {
+    
+    .partners-section h1 {
+        font-size: 2.5em;
+    }
+
+    .carousel, .carousel .carousel-item img, .carousel .carousel-item{
+        width: 600px;
+        height: 350px;
+    }
+
+    .marketInfo {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 2401px) {
+    .partners-section h1 {
+        font-size: 3em;
+    }
+    
+    .carousel, .carousel .carousel-item img, .carousel .carousel-item{
+        max-width: 700px;
+        width: 650px;
+        height: 350px;
+    }
+
+    .marketInfo {
+        font-size: 1.4rem;
+    }
+
+    .marketInfo .numbers {
+        width: 350px;
+    }
+}
+
+/********
+ CONTATO
+*********/
+
+@media (max-width: 400px) {
+    .contacts-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .contacts {
+        padding: 5px;
+    }
+
+    .map {
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 401px) and (max-width: 500px) {
+    .contacts .info a {
+        font-size: 0.8rem;
+    }
+
+    .map h2, .contacts h2 {
+        font-size: 1.1rem;
+    }
+
+    .map a{
+        font-size: 0.95rem;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+    .contacts .info a {
+        font-size: 0.9rem;
+    }
+
+    .map h2, .contacts h2 {
+        font-size: 1.4rem;
+    }
+
+    .map a{
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .contacts-section{
+        justify-content: space-between;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    
+    .contacts {
+        width: 18rem;
+    }
+    
+    .summary{
+        display: none;
+    }
+    
+}
+
+@media (min-width: 1900px) and (max-width: 2099px){
+   
+    .contacts-section {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 2100px) and (max-width: 2399px){
+    
+    .contacts-section {
+        font-size: 1.3rem;
+    }
+
+    .summary {
+        width: 40rem;
+    }
+
+    .map a{
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 2400px){
+    
+    .contacts-section {
+        font-size: 1.4rem;
+    }
+
+    .summary {
+        width: 45rem;
+    }
+
+    .map a{
+        font-size: 1.4rem;
+    }
+}
+
+/**************
+  CERTIFICAÇÕES
+***************/
+
+@media (max-width: 450px) {
+    .certificates  {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 5rem 0;
+    }
+
+    .certificates .certificate {
+        flex-direction: column;
+        width: fit-content;
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .certificates .certificate img {
+        width: 300px;
+        height: 450px;
+    }
+
+    .certificates .certificate h3 {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 600px) {
+    .certificates  {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 5rem 0;
+    }
+
+    .certificates .certificate {
+        flex-direction: column;
+        width: 400px;
+        margin-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .certificates .certificate img {
+        width:400px;
+    }
+
+    .certificates .certificate h3 {
+        margin-top: 15px;
+    }
+}
+
+
+
+
+@media (min-width: 601px) and (max-width: 1700px) {
+    .certificates {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 5rem 0;
+    }
+
+    .certificates .certificate {
+        flex-direction: column;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+    
+    .certificates .certificate h3 {
+        margin-top: 15px;
+    }
+}
