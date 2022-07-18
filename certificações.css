@@ -1,13 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background: linear-gradient(316deg, rgba(134,22,29,1) 0%, rgba(121,119,120,1) 90%);
 }
 
-.backLink {
+.certificates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.certificates .backLink {
     position: absolute;
     top: 20px;
     left: 10px;
@@ -20,24 +24,15 @@ body {
     color: var(--darker-gray);
     margin-left: 5px;
     cursor: pointer;
-    transition: 700ms color;
+    transition: 500ms color;
 }
 
 .backLink:hover {
-    color: rgb(158, 0, 0);
+    color: rgb(94, 0, 0);
 }
 
-i {
+.backLink i {
     margin-right: 5px;
-}
-
-.certificates {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
 }
 
 .certificates .certificate {
